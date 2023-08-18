@@ -22,9 +22,19 @@
             key-positions = <24 37>;
         };
 
-        new_combo {
+        left_gui_combo {
             bindings = <&kp LEFT_GUI>;
             key-positions = <38 37>;
+        };
+
+        toggle_sym_combo {
+            bindings = <&tog 1>;
+            key-positions = <24 25>;
+        };
+
+        toggle_sys_combo {
+            bindings = <&tog 2>;
+            key-positions = <34 35>;
         };
     };
 
@@ -56,19 +66,19 @@
 
             label = "symbols";
             bindings = <
-&trans   &to 0  &kp N1         &kp N2          &kp N3   &kp PLUS    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp MINUS  &kp EQUAL  &trans
-&trans   &to 0  &kp N4         &kp N5          &kp N6     &kp N0     &kp LEFT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp BACKSLASH     &trans  &trans
-&trans  &tog 1  &kp N7         &kp N8          &kp N9    &kp DOT       &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE         &trans     &trans  &trans
-                        &kp BACKSPACE  &kp LEFT_SHIFT  &kp ENTER       &trans                &trans                 &trans
+&trans  &to 0  &kp N1         &kp N2          &kp N3   &kp PLUS    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp MINUS  &kp EQUAL  &trans
+&trans  &to 0  &kp N4         &kp N5          &kp N6     &kp N0        &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp BACKSLASH      &none  &trans
+&trans  &to 0  &kp N7         &kp N8          &kp N9    &kp DOT        &none        &kp LEFT_BRACE        &kp RIGHT_BRACE          &none     &trans  &trans
+                       &kp BACKSPACE  &kp LEFT_SHIFT  &kp ENTER       &trans                &trans                 &trans
             >;
         };
 
         system_layer {
             bindings = <
-&kp ESCAPE    &to 0  &kp F1   &kp F2     &kp F3    &kp F4      &trans   &kp PG_UP             &kp UP     &kp PG_DN    &to 0  &trans
- &kp LCTRL  &kp DEL  &kp F5   &kp F6     &kp F7    &kp F8    &kp HOME    &kp LEFT           &kp DOWN     &kp RIGHT  &kp END  &trans
-    &trans    &to 0  &kp F9  &kp F10    &kp F11   &kp F12      &trans  &kp K_MUTE       &kp C_VOL_DN  &kp C_VOL_UP   &tog 2  &trans
-                              &trans  &kp LSHFT  &kp LALT      &trans      &trans  &kp RIGHT_CONTROL
+&kp ESCAPE    &to 0  &kp F1   &kp F2     &kp F3    &kp F4       &none   &kp PG_UP        &kp UP     &kp PG_DN    &to 0  &trans
+ &kp LCTRL  &kp DEL  &kp F5   &kp F6     &kp F7    &kp F8    &kp HOME    &kp LEFT      &kp DOWN     &kp RIGHT  &kp END  &trans
+    &trans    &to 0  &kp F9  &kp F10    &kp F11   &kp F12       &none  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP    &to 0  &trans
+                              &trans  &kp LSHFT  &kp LALT      &trans      &trans        &trans
             >;
 
             label = "system";
@@ -77,8 +87,8 @@
         settings_layer {
             bindings = <
 &trans  &bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &to 0         &to 0  &bt BT_SEL 0    &bt BT_NXT        &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &to 0         &to 0  &bt BT_SEL 0    &bt BT_NXT         &none    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans         &none         &none         &none         &none    &trans  &trans  &trans  &trans  &trans  &trans
                                         &trans        &trans        &trans    &trans  &trans  &trans
             >;
 
