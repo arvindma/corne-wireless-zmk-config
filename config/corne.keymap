@@ -17,14 +17,9 @@
             key-positions = <24 38>;
         };
 
-        system_combo {
-            bindings = <&tog 2>;
-            key-positions = <24 37>;
-        };
-
         left_gui_combo {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <38 37>;
+            key-positions = <37 36>;
         };
 
         toggle_sym_combo {
@@ -50,10 +45,10 @@
 
             label = "Base";
             bindings = <
-      &kp ESCAPE  &kp Q  &kp W          &kp E      &kp R      &kp T        &kp Y    &kp U          &kp I    &kp O     &kp P  &kp DELETE
-&kp LEFT_CONTROL  &kp A  &kp S          &kp D      &kp F      &kp G        &kp H    &kp J          &kp K    &kp L  &kp SEMI     &kp SQT
-           &mo 1  &kp Z  &kp X          &kp C      &kp V      &kp B        &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH       &mo 2
-                                &kp BACKSPACE  &kp LSHFT  &kp ENTER    &kp SPACE  &kp TAB  &kp RIGHT_GUI
+&kp ESCAPE  &kp Q  &kp W             &kp E      &kp R          &kp T        &kp Y    &kp U          &kp I    &kp O     &kp P  &kp DELETE
+ &kp ENTER  &kp A  &kp S             &kp D      &kp F          &kp G        &kp H    &kp J          &kp K    &kp L  &kp SEMI     &kp SQT
+     &mo 1  &kp Z  &kp X             &kp C      &kp V          &kp B        &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH       &mo 2
+                          &kp LEFT_CONTROL  &kp LSHFT  &kp BACKSPACE    &kp SPACE  &kp TAB  &kp RIGHT_GUI
             >;
         };
 
@@ -66,19 +61,19 @@
 
             label = "symbols";
             bindings = <
-&trans  &to 0  &kp N1         &kp N2          &kp N3   &kp PLUS    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp MINUS  &kp EQUAL  &trans
-&trans  &to 0  &kp N4         &kp N5          &kp N6     &kp N0        &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp BACKSLASH      &none  &trans
-&trans  &to 0  &kp N7         &kp N8          &kp N9    &kp DOT        &none        &kp LEFT_BRACE        &kp RIGHT_BRACE          &none     &trans  &trans
-                       &kp BACKSPACE  &kp LEFT_SHIFT  &kp ENTER       &trans                &trans                 &trans
+&trans  &to 0  &kp N1  &kp N2  &kp N3       &kp PLUS    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp MINUS  &kp EQUAL  &trans
+&trans  &to 0  &kp N4  &kp N5  &kp N6         &kp N0        &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp BACKSLASH      &none  &trans
+&trans  &to 0  &kp N7  &kp N8  &kp N9        &kp DOT        &none        &kp LEFT_BRACE        &kp RIGHT_BRACE          &none     &trans  &trans
+                       &trans  &trans  &kp BACKSPACE       &trans                &trans                 &trans
             >;
         };
 
         system_layer {
             bindings = <
-&kp ESCAPE    &to 0  &kp F1   &kp F2     &kp F3    &kp F4       &none   &kp PG_UP        &kp UP     &kp PG_DN    &to 0  &trans
- &kp LCTRL  &kp DEL  &kp F5   &kp F6     &kp F7    &kp F8    &kp HOME    &kp LEFT      &kp DOWN     &kp RIGHT  &kp END  &trans
-    &trans    &to 0  &kp F9  &kp F10    &kp F11   &kp F12       &none  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP    &to 0  &trans
-                              &trans  &kp LSHFT  &kp LALT      &trans      &trans        &trans
+&kp ESCAPE    &to 0  &kp F1   &kp F2   &kp F3    &kp F4       &none   &kp PG_UP        &kp UP     &kp PG_DN    &to 0  &trans
+ &kp LCTRL  &kp DEL  &kp F5   &kp F6   &kp F7    &kp F8    &kp HOME    &kp LEFT      &kp DOWN     &kp RIGHT  &kp END  &trans
+    &trans    &to 0  &kp F9  &kp F10  &kp F11   &kp F12       &none  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP    &to 0  &trans
+                              &trans   &trans  &kp LALT      &trans      &trans        &trans
             >;
 
             label = "system";
@@ -86,9 +81,9 @@
 
         settings_layer {
             bindings = <
-&trans  &bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &to 0         &to 0  &bt BT_SEL 0    &bt BT_NXT         &none    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans         &none         &none         &none         &none    &trans  &trans  &trans  &trans  &trans  &trans
+ &none  &bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+ &none       &to 0         &to 0  &bt BT_SEL 0    &bt BT_NXT         &none    &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &to 0         &to 0         &none         &none         &none    &trans  &trans  &trans  &trans  &trans  &trans
                                         &trans        &trans        &trans    &trans  &trans  &trans
             >;
 
