@@ -17,13 +17,6 @@
             key-positions = <24 38>;
             layers = <0>;
         };
-
-        left_gui_combo {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <37 36>;
-            layers = <0 1 2 3>;
-            timeout-ms = <0>;
-        };
     };
 
     keymap {
