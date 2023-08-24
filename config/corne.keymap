@@ -24,18 +24,6 @@
             layers = <0 1 2 3>;
             timeout-ms = <0>;
         };
-
-        toggle_sym_combo {
-            bindings = <&tog 1>;
-            key-positions = <24 25>;
-            layers = <0 1 2 3>;
-        };
-
-        toggle_sys_combo {
-            bindings = <&tog 2>;
-            key-positions = <34 35>;
-            layers = <0 1 2 3>;
-        };
     };
 
     keymap {
@@ -50,10 +38,10 @@
 
             label = "Base";
             bindings = <
-      &kp ESCAPE  &kp Q  &kp W      &kp E      &kp R          &kp T        &kp Y    &kp U          &kp I    &kp O     &kp P  &kp DELETE
-&kp LEFT_CONTROL  &kp A  &kp S      &kp D      &kp F          &kp G        &kp H    &kp J          &kp K    &kp L  &kp SEMI     &kp SQT
-           &mo 1  &kp Z  &kp X      &kp C      &kp V          &kp B        &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH       &mo 2
-                                &kp ENTER  &kp LSHFT  &kp BACKSPACE    &kp SPACE  &kp TAB  &kp RIGHT_GUI
+    &kp ESCAPE  &kp Q  &kp W         &kp E  &kp R          &kp T        &kp Y  &kp U              &kp I    &kp O     &kp P      &kp ENTER
+       &kp TAB  &kp A  &kp S         &kp D  &kp F          &kp G        &kp H  &kp J              &kp K    &kp L  &kp SEMI        &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X         &kp C  &kp V          &kp B        &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_GUI
+                              &kp LEFT_ALT  &mo 1  &kp BACKSPACE    &kp SPACE  &mo 2  &kp RIGHT_CONTROL
             >;
         };
 
@@ -66,18 +54,18 @@
 
             label = "symbols";
             bindings = <
-&trans  &to 0  &kp N1  &kp N2  &kp N3  &kp PLUS    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp MINUS  &kp EQUAL  &trans
-&trans  &to 0  &kp N4  &kp N5  &kp N6    &kp N0        &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp BACKSLASH      &none   &to 0
-&trans  &to 0  &kp N7  &kp N8  &kp N9   &kp DOT        &none        &kp LEFT_BRACE        &kp RIGHT_BRACE          &none     &trans  &trans
-                       &trans  &trans    &trans       &trans                &trans                 &trans
+&trans      &to 0  &kp N1  &kp N2  &kp N3  &kp PLUS    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp MINUS  &kp EQUAL  &trans
+&trans  &kp ENTER  &kp N4  &kp N5  &kp N6    &kp N0        &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp BACKSLASH      &none   &none
+&trans  &kp ENTER  &kp N7  &kp N8  &kp N9   &kp DOT        &none        &kp LEFT_BRACE        &kp RIGHT_BRACE          &none     &trans  &trans
+                           &trans  &trans    &trans       &trans                &trans                 &trans
             >;
         };
 
         system_layer {
             bindings = <
-&kp ESCAPE    &to 0  &kp F1   &kp F2   &kp F3    &kp F4       &none   &kp PG_UP        &kp UP     &kp PG_DN    &to 0  &trans
- &kp LCTRL  &kp DEL  &kp F5   &kp F6   &kp F7    &kp F8    &kp HOME    &kp LEFT      &kp DOWN     &kp RIGHT  &kp END  &trans
-    &trans    &to 0  &kp F9  &kp F10  &kp F11   &kp F12       &none  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP    &to 0  &trans
+&kp ESCAPE    &to 0  &kp F1   &kp F2   &kp F3    &kp F4       &none   &kp PG_UP        &kp UP     &kp PG_DN    &to 0      &trans
+ &kp LCTRL  &kp DEL  &kp F5   &kp F6   &kp F7    &kp F8    &kp HOME    &kp LEFT      &kp DOWN     &kp RIGHT  &kp END  &kp DELETE
+    &trans    &to 0  &kp F9  &kp F10  &kp F11   &kp F12       &none  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP    &to 0      &trans
                               &trans   &trans  &kp LALT      &trans      &trans        &trans
             >;
 
