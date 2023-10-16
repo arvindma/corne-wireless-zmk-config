@@ -56,10 +56,10 @@
 
         system_layer {
             bindings = <
-&kp ESCAPE  &to 0    &kp F1  &kp F2   &kp F3   &kp F4      &none           &kp PG_UP         &kp UP        &kp PG_DN     &to 0       &trans
-&kp LCTRL   &kp DEL  &kp F5  &kp F6   &kp F7   &kp F8      &kp HOME        &kp LEFT          &kp DOWN      &kp RIGHT     &kp END     &kp DELETE
-&trans      &to 0    &kp F9  &kp F10  &kp F11  &kp F12     &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_NEXT  &trans
-                             &trans   &trans   &kp LALT    &trans          &trans            &trans
+&kp ESCAPE  &to 0    &kp F1  &kp F2   &kp F3   &kp F4      &none       &kp PG_UP  &kp UP        &kp PG_DN     &to 0       &trans
+&kp LCTRL   &kp DEL  &kp F5  &kp F6   &kp F7   &kp F8      &kp HOME    &kp LEFT   &kp DOWN      &kp RIGHT     &kp END     &kp DELETE
+&trans      &to 0    &kp F9  &kp F10  &kp F11  &kp F12     &kp C_PREV  &kp C_PP   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &trans
+                             &trans   &trans   &kp LALT    &trans      &trans     &trans
             >;
 
             label = "system";
